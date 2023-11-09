@@ -48,7 +48,7 @@ effects:
               description: Выключено
               code: "11"
         - id: screen_central_bank
-          name: Экран с логотипом??
+          name: НЕ РАБОТАЕТ Экран с логотипом 
           states:
             - sense: normal
               description: Экран на верхушке центробанка — отображает контент, логотип/бегущая строка.
@@ -81,7 +81,7 @@ effects:
               description: Выключено
               code: "3"
         - id: people
-          name: Люди на дисках
+          name: НЕ РАБОТАЕТ Люди на дисках
           states:
             - sense: normal
               description: Люди на дисках — очень медленно движутся навстречу друг друг
@@ -144,7 +144,7 @@ effects:
               description: Выключено
               code: "3"
         - id: interior_light
-          name: Вращающийся логотип
+          name: НЕ РАБОТАЕТ И возможно ошибка !!! Вращающийся логотип
           states:
             - sense: normal
               description: Подсветка интерьера — вкл. белый
@@ -189,7 +189,7 @@ effects:
               description: Выключено
               code: "3"
         - id: hacker_smart_window
-          name: Экран второй
+          name: НЕ РАБОТАЕТ И название не верное !!! Экран второй
           states:
             - sense: normal
               description: Смарт стекло в квартире хакера - матовое
@@ -333,7 +333,7 @@ effects:
               description: Выключено
               code: "11"
         - id: traffic_light_cars
-          name: Уличные фонари
+          name: НЕ РАБОТАЕТ Уличные фонари
           states:
             - sense: normal
               description: Светофор для автомобилей — горит красный.
@@ -363,7 +363,7 @@ effects:
               description: Выключено
               code: "11"
         - id: cars_light
-          name: Плдсветка города
+          name: НЕ РАБОТАЕТ Подсветка города
           states:
             - sense: normal
               description: Фары автомобиля — работают габариты.
@@ -396,7 +396,7 @@ effects:
               description: Выключено
               code: "11"
         - id: arc_light
-          name: Архитектурная подсветка на здании
+          name: НЕ РАБОТАЕТ Архитектурная подсветка на здании
           states:
             - sense: normal
               description: Архитектурная подсветка подсвечивает здание.
@@ -492,7 +492,7 @@ effects:
               description: Выключено
               code: "11"
         - id: wires_light
-          name: Светящиеся провода - оптоволокно с белой подсветкой
+          name: Светящиеся провода - оптоволокно с белой подсветкой и подсветка подстанции от коротой они идут 
           states:
             - sense: normal
               description: Нормальное
@@ -573,7 +573,7 @@ effects:
               description: Выключено
               code: "11"
         - id: line
-          name: Трубы между платформой и нефтеперерабатывающим заводом
+          name: НЕ РАБОТАЕТ Трубы между платформой и нефтеперерабатывающим заводом
           states:
             - sense: normal
               description: LED подсветка — эффект движения.
