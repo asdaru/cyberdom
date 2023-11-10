@@ -3,61 +3,76 @@ effects:
       unitDescription: Коммерческий банк
       effects:
         - id: bank_windows
-          name: Подсветка банка и экран хранилища
+          name: Подсветка банка
           states:
             - sense: normal
-              description: Подсветка окон банка — вкл. белый
+              description: Вкл. белый
               code: "00"
             - sense: warning
-              description: Подсветка окон банка - оранжевая пульсация
+              description: Вкл. белый
               code: "01"
             - sense: invalid
-              description: Подсветка окон банка - красная пульсация
+              description: Красная пульсация
               code: "10"
             - sense: "off"
-              description: Подсветка окон банка - выключено
+              description: Выключено
               code: "11"
         - id: sphere
-          name: LED сфера над макетом"
+          name: LED сфера над макетом
           states:
             - sense: normal
-              description: Отображается видео 1 — множество финансовых переводов полосок по всему глобусу.
+              description: Отображается видео 1 - множество финансовых переводов
               code: "00"
             - sense: warning
-              description: Отображается видео 3 — переводы перестали летать. все сбоит, глючит.
+              description: Отображается видео 2 - переводы перестали летать
               code: "01"
             - sense: invalid
-              description: Отображается видео 3 — переводы перестали летать. все сбоит, глючит.
+              description: Отображается видео 2 - переводы перестали летать
               code: "10"
             - sense: "off"
               description: выключено
               code: "11"
-        - id: center_bank_windows
-          name: Свет в небоскребах??
+        - id: light_bridge_APM
+          name: Подсветка ЦБ
           states:
             - sense: normal
-              description: Подсветка банка окна белый — вкл.
+              description: Вкл. белый
               code: "00"
             - sense: warning
-              description: Подсветка банка окна — оранжевая пульсация.
+              description: Оранжевая пульсация
               code: "01"
             - sense: invalid
-              description: Подсветка банка окна - красная пульсация
+              description: Красная пульсация
               code: "10"
             - sense: "off"
               description: Выключено
               code: "11"
         - id: screen_central_bank
-          name: НЕ РАБОТАЕТ Экран с логотипом 
+          name: Экраны на ЦБ
           states:
             - sense: normal
-              description: Экран на верхушке центробанка — отображает контент, логотип/бегущая строка.
+              description: Отображается видео 1 - логотип
               code: "00"
             - sense: warning
-              description: Экран на верхушке центробанка — появляются помехи, глитч.
+              description: Отображается видео 1 - логотип
               code: "01"
             - sense: invalid
-              description: Экран на верхушке центробанка — отображает хакнутый контент.
+              description: Отображается видео 1 - логотип
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: vault_screen
+          name: Экран хранилища
+          states:
+            - sense: normal
+              description: Видео 1, хранилище полное денег
+              code: "00"
+            - sense: warning
+              description: Видео 1, хранилище полное денег
+              code: "01"
+            - sense: invalid
+              description: Видео 2, ограбление, пустое хранилище
               code: "10"
             - sense: "off"
               description: Выключено
@@ -81,10 +96,10 @@ effects:
               description: Выключено
               code: "3"
         - id: people
-          name: НЕ РАБОТАЕТ Люди на дисках
+          name: Люди на дисках
           states:
             - sense: normal
-              description: Люди на дисках — очень медленно движутся навстречу друг друг
+              description: Люди на дисках — не вращаются
               code: "0"
             - sense: warning
               description: Люди на дисках — очень медленно движутся навстречу друг друг
@@ -129,7 +144,7 @@ effects:
       unitDescription: Криптовалютная биржа
       effects:
         - id: facade_light
-          name: Подсветка и прозрачный экран
+          name: Подсветка в кваритре и смарт стекло хакера + фасады зданий 
           states:
             - sense: normal
               description: Подсветка фасада — вкл. белый
@@ -138,28 +153,28 @@ effects:
               description: Подсветка фасада - оранжевая пульсация
               code: "1"
             - sense: invalid
-              description: Подсветка фасада - красная пульсаци
+              description: Подсветка фасада - красная пульсаци,  смарт стекло прозрачное
               code: "2"
             - sense: "off"
               description: Выключено
               code: "3"
         - id: interior_light
-          name: НЕ РАБОТАЕТ И возможно ошибка !!! Вращающийся логотип
+          name: Вращающийся логотип
           states:
             - sense: normal
-              description: Подсветка интерьера — вкл. белый
+              description: Нет вращения
               code: "0"
             - sense: warning
-              description: Подсветка интерьера - оранжевая пульсация
+              description: Вращается
               code: "1"
             - sense: invalid
-              description: Подсветка интерьера - красная пульсация
+              description: Вращается
               code: "2"
             - sense: "off"
               description: Выключено
               code: "3"
         - id: screen
-          name: Экран первый
+          name: Экран крипты (1)
           states:
             - sense: normal
               description: Большие экраны наверху стойки 2 шт., видео 1 — нормальна работа биржи.
@@ -174,50 +189,129 @@ effects:
               description: Выключено
               code: "3"
         - id: apart_hacker_light
-          name: Экран третий
+          name: Экран крипты (2)
           states:
             - sense: normal
-              description: Подсветка в квартире хакера — выкл
+              description: Большие экраны наверху стойки 2 шт., видео 1 — нормальна работа биржи.
               code: "0"
             - sense: warning
-              description: Подсветка в квартире хакера — выкл
+              description: Видео
               code: "1"
             - sense: invalid
-              description: Подсветка в квартире хакера - красная пульсация
+              description: Большие экраны наверху стойки 2 шт., видео 2 — биржа обваливается, паника.
               code: "2"
             - sense: "off"
               description: Выключено
               code: "3"
         - id: hacker_smart_window
-          name: НЕ РАБОТАЕТ И название не верное !!! Экран второй
+          name: Экран крипты (3)
           states:
             - sense: normal
-              description: Смарт стекло в квартире хакера - матовое
+            - sense: normal
+              description: Большие экраны наверху стойки 2 шт., видео 1 — нормальна работа биржи.
               code: "0"
             - sense: warning
-              description: ССмарт стекло в квартире хакера - матовое
+              description: Видео
               code: "1"
             - sense: invalid
-              description: Смарт стекло в квартире хакера - прозрачное
+              description: Большие экраны наверху стойки 2 шт., видео 2 — биржа обваливается, паника.
               code: "2"
             - sense: "off"
               description: Выключено
               code: "3"
         - id: park_light
-          name: Экран четвертый
+          name: Экран крипты (4)
           states:
             - sense: normal
-              description: Норма
+              description: Большие экраны наверху стойки 2 шт., видео 1 — нормальна работа биржи.
               code: "0"
             - sense: warning
-              description: Тревога
+              description: Видео
               code: "1"
             - sense: invalid
-              description: Недопустимое событие
+              description: Большие экраны наверху стойки 2 шт., видео 2 — биржа обваливается, паника.
               code: "2"
             - sense: "off"
               description: Выключено
               code: "3"
+    - unit: atm
+      unitDescription: Банкоматы
+      effects:
+        - id: kinetic_doors
+          name: Дверцы банкоматов
+          states:
+            - sense: normal
+              description: Дверцы зактрыты люди не двигаются
+              code: "00"
+            - sense: warning
+              description: Дверцы зактрыты люди не двигаются
+              code: "01"
+            - sense: invalid
+              description: Дверцы открываются и закрываются, люди вращаются
+              code: "10"
+            - sense: "off"
+              description: Дверцы зактрыты люди не двигаются
+              code: "11"
+        - id: backlight
+          name: Подсветка банкоматов и фонарь над хакером, и мост к банкоматам
+          states:
+            - sense: normal
+              description: Белая, мост голубой
+              code: "00"
+            - sense: warning
+              description: Оранжевая пульсация.
+              code: "01"
+            - sense: invalid
+              description: Красная пульсация
+              code: "10"
+            - sense: "off"
+              description: выключено
+              code: "11"
+        - id: lanterns
+          name: Уличные фонари
+          states:
+            - sense: normal
+              description: вкл.
+              code: "00"
+            - sense: warning
+              description: вкл.
+              code: "01"
+            - sense: invalid
+              description: вкл.
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: screen
+          name: Экран банкоманта (1)
+          states:
+            - sense: normal
+              description: Нормальное видео
+              code: "00"
+            - sense: warning
+              description: Гличи в видео
+              code: "01"
+            - sense: invalid
+              description: Экран превращается в экран однорукого бандита
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: hacker
+          name: Экран банкоманта (2)
+          states:
+            - sense: normal
+              description: Нормальное видео
+              code: "00"
+            - sense: warning
+              description: Гличи в видео
+              code: "01"
+            - sense: invalid
+              description: Экран превращается в экран однорукого бандита
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
     - unit: cosmolift
       unitDescription: Космолифт
       effects:
@@ -240,31 +334,76 @@ effects:
           name: Круглый экран
           states:
             - sense: normal
-              description: Нормальное
+              description: Нормальное, Приближающаяся земля
               code: "00"
             - sense: warning
-              description: Тревога
+              description: Тревога, Гличи
               code: "01"
             - sense: invalid
-              description: Недопустимое событие
+              description: Недопустимое событие, взрывы от падающего космолифта
               code: "10"
             - sense: "off"
               description: Выключено
               code: "11"
         - id: station
-          name: Космическая станция и лифт
+          name: Космическая станция
+          states:
+            - sense: normal
+              description: Вращение, белый свет
+              code: "00"
+            - sense: warning
+              description: Вращение, Оранжевый свет
+              code: "01"
+            - sense: invalid
+              description: Остановка, красный свет,  
+              code: "10"
+            - sense: "off"
+              description: Выключено и зарядка лифта
+              code: "11"
+        - id: car_light
+          name: Лифт (передать с командой station)
+          states:
+            - sense: normal
+              description: Подъем опускание 
+              code: "00"
+            - sense: warning
+              description: Остановка в центре, мигание
+              code: "01"
+            - sense: invalid
+              description: Падает вниз
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: work_screens
+          name: Экраны ЦУП (1)
           states:
             - sense: normal
               description: Нормальное
               code: "00"
             - sense: warning
-              description: Тревога
+              description: Гличи
               code: "01"
             - sense: invalid
-              description: Недопустимое событие
+              description: Сильные гличи, взлом
               code: "10"
             - sense: "off"
-              description: Выключено и зарядка лифта
+              description: Выключено
+              code: "11"
+        - id: screen
+          name: Экраны ЦУП (2) (Обязательно ввместе с событием work_screens)
+          states:
+            - sense: normal
+              description: Нормальное
+              code: "00"
+            - sense: warning
+              description: Гличи
+              code: "01"
+            - sense: invalid
+              description: Сильные гличи, взлом
+              code: "10"
+            - sense: "off"
+              description: Выключено
               code: "11"
     - unit: stadion
       unitDescription: Стадион
@@ -299,6 +438,135 @@ effects:
             - sense: "off"
               description: Выключено
               code: "11"
+    - unit: appart_iot
+      unitDescription: Умный дом
+      effects:
+        - id: appart_light
+          name: Освещение и дым
+          states:
+            - sense: normal
+              description: Горит свет
+              code: "00"
+            - sense: warning
+              description: Мигает свет
+              code: "01"
+            - sense: invalid
+              description: Тухнет свет, идет дым, красная подсветка, голубой свет в подвале 
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+    - unit: darkstore
+      unitDescription: Даркстор
+      effects:
+        - id: transport_belts
+          name: Конвеер
+          states:
+            - sense: normal
+              description: Работает нормальном
+              code: "00"
+            - sense: warning
+              description: Подергивание
+              code: "01"
+            - sense: invalid
+              description: Останавливается
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: inside_light
+          name: Освещение
+          states:
+            - sense: normal
+              description: Белый свет
+              code: "00"
+            - sense: warning
+              description: Оранжевый свет
+              code: "01"
+            - sense: invalid
+              description: Красный свет
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: left_screen
+          name: Экран
+          states:
+            - sense: normal
+              description: Товары на складе отправляются
+              code: "00"
+            - sense: warning
+              description: Товары портятся
+              code: "01"
+            - sense: invalid
+              description: Неисправность склада (утилизация)
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+    - unit: office_mfc
+      unitDescription: Офис МФЦ
+      effects:
+        - id: main_light
+          name: Подсветка МФЦ
+          states:
+            - sense: normal
+              description: Белое освещение
+              code: "00"
+            - sense: warning
+              description: Оранжевое освещение
+              code: "01"
+            - sense: invalid
+              description: Красное освещение
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: tv_presentation
+          name: Экран МФЦ (1)
+          states:
+            - sense: normal
+              description: Нормальный контент, прерентация
+              code: "00"
+            - sense: warning
+              description: Помехи, глитчи.
+              code: "01"
+            - sense: invalid
+              description: Сообщение от хакера
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: people
+          name: Люди
+          states:
+            - sense: normal
+              description: Мало посетителей
+              code: "00"
+            - sense: warning
+              description: Мало посетителей
+              code: "01"
+            - sense: invalid
+              description: Очередь
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: tv_main
+          name: Экран МФЦ (2)
+          states:
+            - sense: normal
+              description: Нормальный контент, электронная очередь
+              code: "00"
+            - sense: warning
+              description: Помехи, глитчи.
+              code: "01"
+            - sense: invalid
+              description: Сообщение от хакера
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
     - unit: urban_system
       unitDescription: Городские системы/видеоэкраны
       effects:
@@ -312,37 +580,37 @@ effects:
               description: Круглый экран — отображается видео 1 с помехами. курсор может появляться поверх, окно настроек.
               code: "01"
             - sense: invalid
-              description: Круглый экран — меняет контент — отображается символ хакерского объединения
+              description: Круглый экран — меняет контент — очень сильны гличи
               code: "10"
             - sense: "off"
               description: Выключено
               code: "11"
         - id: mini_screen
-          name: Экраны в зданиях
+          name: Экраны на зданиях
           states:
             - sense: normal
-              description: Экраны поменьше, в городе — отобража- ются видео 2 — рекламные сообщения.
+              description: отображаются видео 2 — рекламные сообщения.
               code: "00"
             - sense: warning
-              description: Экраны поменьше, в городе — глючат, глитчи, тоже какие-то настройки.
+              description: глючат, глитчи, тоже какие-то настройки.
               code: "01"
             - sense: invalid
-              description: Экраны поменьше, в городе — меняют контент — отображаются документы и факты о депутате.
+              description: Сообщение от хакера
               code: "10"
             - sense: "off"
               description: Выключено
               code: "11"
         - id: traffic_light_cars
-          name: НЕ РАБОТАЕТ Уличные фонари
+          name: Уличные фонари (НЕ РАБОТАЮТ)
           states:
             - sense: normal
-              description: Светофор для автомобилей — горит красный.
+              description: Включены
               code: "00"
             - sense: warning
-              description: Светофор для автомобилей — горит красный, но иногда переключается и возвращается — глючит.
+              description: Включены
               code: "01"
             - sense: invalid
-              description: Светофор для автомобилей — горит зеленый.
+              description: Включены
               code: "10"
             - sense: "off"
               description: Выключено
@@ -351,28 +619,43 @@ effects:
           name: Автомобиль, светофоры, пешеходы
           states:
             - sense: normal
-              description: Автомобиль — припаркован в кармане на дороге.
+              description: Автомобиль — припаркован на дороге.
               code: "00"
             - sense: warning
-              description: Автомобиль — припаркован в кармане на дороге.
+              description: Автомобиль — припаркован  на дороге. Мигают фары
               code: "01"
             - sense: invalid
-              description: Автомобиль — едет вперед и врезается в людей.
+              description: Автомобиль — едет вперед и врезается в людей. Мигают фары
               code: "10"
             - sense: "off"
               description: Выключено
               code: "11"
         - id: cars_light
-          name: НЕ РАБОТАЕТ Подсветка города
+          name: Свет в зданиях (cars_lite верно :) )
           states:
             - sense: normal
-              description: Фары автомобиля — работают габариты.
+              description: Включена
               code: "00"
             - sense: warning
-              description: Автомобиль — мигают фары.
+              description: Включена
               code: "01"
             - sense: invalid
-              description: Фары автомобиля — после аварии включается аварийка.
+              description: Включена
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: people
+          name: Робот (НЕ РАБОТАЕТ)
+          states:
+            - sense: normal
+              description: Включен.
+              code: "00"
+            - sense: warning
+              description: Включен.
+              code: "01"
+            - sense: invalid
+              description: Включен.
               code: "10"
             - sense: "off"
               description: Выключено
@@ -381,7 +664,7 @@ effects:
       unitDescription: ГЭС
       effects:
         - id: screen
-          name: Встроенный экран
+          name: Экран
           states:
             - sense: normal
               description: Толща воды с лучами света.
@@ -396,7 +679,7 @@ effects:
               description: Выключено
               code: "11"
         - id: arc_light
-          name: НЕ РАБОТАЕТ Архитектурная подсветка на здании
+          name: Архитектурная подсветка на здании
           states:
             - sense: normal
               description: Архитектурная подсветка подсвечивает здание.
@@ -410,8 +693,23 @@ effects:
             - sense: "off"
               description: Выключено
               code: "11"
+        - id: electrical_wires
+          name: Турбина маленькая сбоку(НЕ РАБОТАЕТ)
+          states:
+            - sense: normal
+              description: Крутится.
+              code: "00"
+            - sense: warning
+              description: Крутится
+              code: "01"
+            - sense: invalid
+              description: Останавливается
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
         - id: city_part_light
-          name: Сегмент города получающий электричество с горящими окнами
+          name: Сегмент города получающий электричество
           states:
             - sense: normal
               description: Сегмент города функционирует
@@ -421,6 +719,21 @@ effects:
               code: "01"
             - sense: invalid
               description: Сегмент города обесточивается, свет в окнах гаснет
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: turbine
+          name: Умный счетчик
+          states:
+            - sense: normal
+              description: Архитектурная подсветка подсвечивает здание.
+              code: "00"
+            - sense: warning
+              description: Архитектурная подсветка меняется на тревожную оранжевую.
+              code: "01"
+            - sense: invalid
+              description: Архитектурная подсветка переходит в аварийный режим. Меньше лампочек и они красные.
               code: "10"
             - sense: "off"
               description: Выключено
@@ -443,17 +756,62 @@ effects:
             - sense: "off"
               description: Выключено
               code: "11"
-        - id: city_part_light
-          name: Сегмент города получающий электричество с горящими окнами
+        - id: screen
+          name: Прозрачный экран отображающий турбину ТЭЦ
           states:
             - sense: normal
-              description: Нормальное
+              description: Нормальное, работа турбины
               code: "00"
             - sense: warning
-              description: Тревога
+              description: Нормальное, работа турбины
               code: "01"
             - sense: invalid
-              description: Недопустимое событие
+              description: Недопустимое событие, показывает различные неисправности
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: steam
+          name: Пар из градирни
+          states:
+            - sense: normal
+              description: Идет
+              code: "00"
+            - sense: warning
+              description: Идет
+              code: "01"
+            - sense: invalid
+              description: Не идет
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: city_part_light
+          name: Сегмент города получающий электричество
+          states:
+            - sense: normal
+              description: Освещение работает
+              code: "00"
+            - sense: warning
+              description: Освещение работает
+              code: "01"
+            - sense: invalid
+              description: Освещение гаснет
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: factory_steam
+          name: Умный счетчик
+          states:
+            - sense: normal
+              description: Показывает выработку
+              code: "00"
+            - sense: warning
+              description: Показывает выроботку
+              code: "01"
+            - sense: invalid
+              description: Показывает 0
               code: "10"
             - sense: "off"
               description: Выключено
@@ -462,7 +820,7 @@ effects:
       unitDescription: ВЭС
       effects:
         - id: wind_turbines
-          name: Вращающиеся ветряки
+          name: Ветрогенераторы и дым
           states:
             - sense: normal
               description: Ветряки плавно вращаются.
@@ -477,7 +835,7 @@ effects:
               description: Выключено
               code: "11"
         - id: city_part_light
-          name: Незначительный сегмент города
+          name: Сегмент города получающий электричество
           states:
             - sense: normal
               description: Незначительный сегмент города функционирует, свет в окнах гаснет
@@ -492,16 +850,31 @@ effects:
               description: Выключено
               code: "11"
         - id: wires_light
-          name: Светящиеся провода - оптоволокно с белой подсветкой и подсветка подстанции от коротой они идут 
+          name: Подсветка линий электропередач и трансформатора
           states:
             - sense: normal
-              description: Нормальное
+              description: Белая
               code: "00"
             - sense: warning
-              description: Тревога
+              description: Белая
               code: "01"
             - sense: invalid
-              description: Недопустимое событие
+              description: Красная
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: transformator
+          name: Умный счетчик
+          states:
+            - sense: normal
+              description: Показывает выработку
+              code: "00"
+            - sense: warning
+              description: Показывает выроботку
+              code: "01"
+            - sense: invalid
+              description: Показывает 0
               code: "10"
             - sense: "off"
               description: Выключено
@@ -510,7 +883,7 @@ effects:
       unitDescription: Подстанция
       effects:
         - id: arc_light
-          name: Подсветка подстанции
+          name: Освещение завода и пар из труб
           states:
             - sense: normal
               description: Архитектурная подсветка освещает комплекс подстанции.
@@ -525,7 +898,7 @@ effects:
               description: Выключено
               code: "11"
         - id: towers_light
-          name: Подсветка завода
+          name: Подсветка подстанции
           states:
             - sense: normal
               description: Архитектурная подсветка освещает комплекс завода.
@@ -535,6 +908,21 @@ effects:
               code: "01"
             - sense: invalid
               description: Архитектурная подсветка меняется на аварийную.
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: city_part_light
+          name: Умный счетчик
+          states:
+            - sense: normal
+              description: Показывает выработку
+              code: "00"
+            - sense: warning
+              description: Показывает выроботку
+              code: "01"
+            - sense: invalid
+              description: Показывает 0
               code: "10"
             - sense: "off"
               description: Выключено
@@ -552,7 +940,7 @@ effects:
               description: Краны дергаются, иногда замирают и продолжают работу.
               code: "01"
             - sense: invalid
-              description: Краны замирают (грузы не бросают, как было ранее)
+              description: Краны замирают
               code: "10"
             - sense: "off"
               description: Выключено
@@ -572,8 +960,23 @@ effects:
             - sense: "off"
               description: Выключено
               code: "11"
-        - id: line
-          name: НЕ РАБОТАЕТ Трубы между платформой и нефтеперерабатывающим заводом
+        - id: light_tf_refinery
+          name: Трубы между платформой и парком
+          states:
+            - sense: normal
+              description: LED подсветка — эффект движения.
+              code: "00"
+            - sense: warning
+              description: LED подсветка в трубах вместо плавного движения — дергается, глючит.
+              code: "01"
+            - sense: invalid
+              description: LED подсветка — движение нефти останавливается, иногда мигает.
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: turbine_light
+          name: Трубы между платформой и нефте-переработкой
           states:
             - sense: normal
               description: LED подсветка — эффект движения.
@@ -620,8 +1023,8 @@ effects:
             - sense: "off"
               description: Выключено
               code: "11"
-        - id: turbine_light
-          name: Трубы между платформой и нефтепереработкой
+        - id: light_tf_ags
+          name: Трубы между нефтепереработкой и заправкой
           states:
             - sense: normal
               description: 1. Под водой — эффект движения; 2. Между заводом и рез. парком — эффект движения; 3. Между заводом и нефтедобычей — эффект движения
@@ -635,26 +1038,11 @@ effects:
             - sense: "off"
               description: Выключено
               code: "11"
-        - id: line
-          name: Трубы между нефте-переработкой и АЗС
-          states:
-            - sense: normal
-              description: Нормальное
-              code: "00"
-            - sense: warning
-              description: Тревога
-              code: "01"
-            - sense: invalid
-              description: Недопустимое событие
-              code: "10"
-            - sense: "off"
-              description: Выключено
-              code: "11"
     - unit: refinery
       unitDescription: Резервуарный парк
       effects:
         - id: tanker
-          name: Танкер и подводные трубы
+          name: Грузовик, цистерны, танкер и подводные трубы
           states:
             - sense: normal
               description: Перемещается в нормальном режиме между резервуарным парком и нефтеперерабатывающим заводом
@@ -683,8 +1071,8 @@ effects:
             - sense: "off"
               description: Выключено
               code: "11"
-        - id: light_tf_azs
-          name: Подсветка между рез. парком и заправкой
+        - id: light_tube
+          name: Трубы между парком и АЗС
           states:
             - sense: normal
               description: эффект движения.
@@ -717,7 +1105,7 @@ effects:
               description: Выключено
               code: "11"
         - id: arc_light
-          name: Арх. подсветка
+          name: Архитектурная подсветка
           states:
             - sense: normal
               description: Архитектурная подсветка нормальная.
@@ -727,6 +1115,156 @@ effects:
               code: "01"
             - sense: invalid
               description: Архитектурная подсветка меняется на красную, что-то может мигать.
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+    - unit: aviatransport
+      unitDescription: Авиатранспорт
+      effects:
+        - id: plane
+          name: Самолет
+          states:
+            - sense: normal
+              description: Краны вращаются изображая деятельность. иногда замирают.
+              code: "00"
+            - sense: warning
+              description: Краны дергаются, иногда замирают и продолжают работу.
+              code: "01"
+            - sense: invalid
+              description: Краны замирают (грузы не бросают, как было ранее)
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: funicular_light
+          name: Подсветка (НЕ РАБОТАЕТ)
+          states:
+            - sense: normal
+              description: Вся станция во множестве диодов.
+              code: "00"
+            - sense: warning
+              description: Архитектурная подсветка оранжевая, пульсирует, меняя яркость.
+              code: "01"
+            - sense: invalid
+              description: Архитектурная подсветка становится красной мигает.
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+    - unit: roads
+      unitDescription: Дороги
+      effects:
+        - id: scooter
+          name: Самокат (НЕ РАБОТАЕТ)
+          states:
+            - sense: normal
+              description: Девушка едет на электросамокате
+              code: "00"
+            - sense: warning
+              description: Девушка едет на электросамокате
+              code: "01"
+            - sense: invalid
+              description: Девушка падает с самоката
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: cars
+          name: Автомобили
+          states:
+            - sense: normal
+              description: Машины движутся нормально
+              code: "00"
+            - sense: warning
+              description: Машины движутся нормально
+              code: "01"
+            - sense: invalid
+              description: Пробка (отображение на экрана), гаснет свет
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: trafic_light
+          name: Глобальная подсветка макета
+          states:
+            - sense: normal
+              description: Включена
+              code: "00"
+            - sense: warning
+              description: Включена
+              code: "01"
+            - sense: invalid
+              description: Включена
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+    - unit: railroad
+      unitDescription: Железная дорога
+      effects:
+        - id: train_cargo
+          name: Поезда и вокзал
+          states:
+            - sense: normal
+              description: Поездв курсируют нормально
+              code: "00"
+            - sense: warning
+              description: Поезда курсируют, мигает светофор
+              code: "01"
+            - sense: invalid
+              description: Два поезда врезаются (физика + контент на экране)
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+    - unit: cargo_port
+      unitDescription: Грузовой порт
+      effects:
+        - id: steam
+          name: Портальный кран + мостовой кран (
+          states:
+            - sense: normal
+              description: Краны вращаются изображая деятельность. иногда замирают.
+              code: "00"
+            - sense: warning
+              description: Краны дергаются, иногда замирают и продолжают работу.
+              code: "01"
+            - sense: invalid
+              description: Краны замирают
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+        - id: arc_light
+          name: Освещение
+          states:
+            - sense: normal
+              description: Подсветка внутри крана и рядом белая
+              code: "00"
+            - sense: warning
+              description: Подсветка внутри крана и рядом белая
+              code: "01"
+            - sense: invalid
+              description: Подсветка внутри крана и рядом красная
+              code: "10"
+            - sense: "off"
+              description: Выключено
+              code: "11"
+    - unit: river_port
+      unitDescription: Речной порт
+      effects:
+        - id: platform
+          name: Подсветка
+          states:
+            - sense: normal
+              description: Вся станция во множестве диодов.
+              code: "00"
+            - sense: warning
+              description: Архитектурная подсветка оранжевая, пульсирует, меняя яркость.
+              code: "01"
+            - sense: invalid
+              description: Архитектурная подсветка становится красной мигает.
               code: "10"
             - sense: "off"
               description: Выключено
