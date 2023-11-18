@@ -16,6 +16,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 325
+      is_attempt: false
       riskname: Остановка работы мостового крана - авария
       effectjobs:
         - unit: cargo_port
@@ -47,6 +48,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 326
+      is_attempt: false
       riskname: Вмешательство в управление портальным краном - авария
       effectjobs:
         - unit: cargo_port
@@ -84,6 +86,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 316
+      is_attempt: false
       riskname: Остановка работы городских светофоров - авария
       effectjobs:
         - unit: roads
@@ -100,7 +103,7 @@ events:
           finish: 40000
         - unit: roads
           effect: trafic_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
@@ -127,6 +130,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 317
+      is_attempt: false
       riskname: Нарушение работы городских светофоров - авария
       effectjobs:
         - unit: roads
@@ -143,7 +147,7 @@ events:
           finish: 40000
         - unit: roads
           effect: trafic_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
@@ -158,11 +162,12 @@ events:
           start: 0
           finish: 40000
     - riskid: 318
+      is_attempt: false
       riskname: Прекращение движения поездов - авария
       effectjobs:
         - unit: railroad
           effect: train_cargo
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
@@ -177,6 +182,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 319
+      is_attempt: false
       riskname: Авария на железной дороге - авария
       effectjobs:
         - unit: railroad
@@ -196,6 +202,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 320
+      is_attempt: false
       riskname: Подмена данных на пульте диспетчера железной дороги - авария
       effectjobs:
         - unit: railroad
@@ -215,6 +222,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 327
+      is_attempt: false
       riskname: Сбой системы информирования пассажиров поездов - авария
       effectjobs:
         - unit: railroad
@@ -225,7 +233,7 @@ events:
           finish: 40000
     - riskid: 331
       is_attempt: true
-      riskname: "Канатная дорога: Остановка канатной дороги - тревога"
+      riskname: 'Канатная дорога: Остановка канатной дороги - тревога'
       effectjobs:
         - unit: aviatransport
           effect: funicular_light
@@ -234,7 +242,8 @@ events:
           start: 0
           finish: 40000
     - riskid: 331
-      riskname: "Канатная дорога: Остановка канатной дороги - авария"
+      is_attempt: false
+      riskname: 'Канатная дорога: Остановка канатной дороги - авария'
       effectjobs:
         - unit: aviatransport
           effect: funicular_light
@@ -244,7 +253,7 @@ events:
           finish: 40000
     - riskid: 333
       is_attempt: true
-      riskname: "Канатная дорога: Изменение скорости движения - тревога"
+      riskname: 'Канатная дорога: Изменение скорости движения - тревога'
       effectjobs:
         - unit: aviatransport
           effect: funicular_light
@@ -253,7 +262,8 @@ events:
           start: 0
           finish: 40000
     - riskid: 333
-      riskname: "Канатная дорога: Изменение скорости движения - авария"
+      is_attempt: false
+      riskname: 'Канатная дорога: Изменение скорости движения - авария'
       effectjobs:
         - unit: aviatransport
           effect: funicular_light
@@ -263,7 +273,7 @@ events:
           finish: 40000
     - riskid: 335
       is_attempt: true
-      riskname: "ГосУслуги: Выпуск сертификата на перевозку опасных грузов - тревога"
+      riskname: 'ГосУслуги: Выпуск сертификата на перевозку опасных грузов - тревога'
       effectjobs:
         - unit: aviatransport
           effect: plane
@@ -272,7 +282,8 @@ events:
           start: 0
           finish: 40000
     - riskid: 335
-      riskname: "ГосУслуги: Выпуск сертификата на перевозку опасных грузов - авария"
+      is_attempt: false
+      riskname: 'ГосУслуги: Выпуск сертификата на перевозку опасных грузов - авария'
       effectjobs:
         - unit: aviatransport
           effect: plane
@@ -303,6 +314,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 313
+      is_attempt: false
       riskname: Остановка добычи нефти - авария
       effectjobs:
         - unit: oil_platform
@@ -340,6 +352,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 312
+      is_attempt: false
       riskname: Подмена данных о состоянии нефтекачалок - авария
       effectjobs:
         - unit: oil_platform
@@ -365,6 +378,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 248
+      is_attempt: false
       riskname: Остановка нефтеперекачивающей станции - авария
       effectjobs:
         - unit: oil_platform
@@ -384,11 +398,12 @@ events:
           start: 0
           finish: 40000
     - riskid: 249
+      is_attempt: false
       riskname: Утечка нефти из нефтепровода - авария
       effectjobs:
         - unit: oil_platform
           effect: light_tf_refinery
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
@@ -403,6 +418,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 250
+      is_attempt: false
       riskname: Подмена данных в системе управления нефтеперекачивающей станцией - авария
       effectjobs:
         - unit: oil_platform
@@ -428,6 +444,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 251
+      is_attempt: false
       riskname: Вывод из строя коммутаторов технологической сети очистки нефти - авария
       effectjobs:
         - unit: oil_factory
@@ -459,6 +476,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 252
+      is_attempt: false
       riskname: Остановка очистки нефти в электродегидраторе на нефтеперерабатывающем заводе - авария
       effectjobs:
         - unit: oil_factory
@@ -490,6 +508,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 253
+      is_attempt: false
       riskname: Нарушение процесса обессоливания и обезвоживания нефти в электродегидраторе на нефтеперерабатывающем заводе - авария
       effectjobs:
         - unit: refinery
@@ -521,6 +540,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 254
+      is_attempt: false
       riskname: Подмена значений пропорций водонефтяной смеси в электродегитраторе - авария
       effectjobs:
         - unit: refinery
@@ -552,6 +572,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 255
+      is_attempt: false
       riskname: Остановка подачи топливного газа в трубчатую печь нефтеперерабатывающего завода - авария
       effectjobs:
         - unit: refinery
@@ -583,6 +604,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 256
+      is_attempt: false
       riskname: Пожар на нефтеперерабатывающем заводе из-за нарушения технологического процесса подогрева нефти в печи - авария
       effectjobs:
         - unit: refinery
@@ -614,6 +636,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 257
+      is_attempt: false
       riskname: Захлебывание ректификационной колонны на нефтеперерабатывающем заводе - авария
       effectjobs:
         - unit: refinery
@@ -645,6 +668,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 258
+      is_attempt: false
       riskname: Остановка работы ректификационной колонны на нефтеперерабатывающем заводе - авария
       effectjobs:
         - unit: refinery
@@ -676,6 +700,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 259
+      is_attempt: false
       riskname: Невозможность заправки автомобилей на ААЗС из-за включения режима приема топлива - авария
       effectjobs:
         - unit: azs
@@ -719,6 +744,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 260
+      is_attempt: false
       riskname: Остановка нефтепродуктопровода - авария
       effectjobs:
         - unit: oil_factory
@@ -762,6 +788,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 261
+      is_attempt: false
       riskname: Изменение цены продаваемого топлива в системе управления АЗС - авария
       effectjobs:
         - unit: azs
@@ -787,6 +814,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 262
+      is_attempt: false
       riskname: Разлив нефти на автоматизированной установке тактового налива нефти в ж.-д. цистерны - авария
       effectjobs:
         - unit: oil_factory
@@ -806,6 +834,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 263
+      is_attempt: false
       riskname: Повреждение автоматизированной установки тактового налива нефти в ж.-д. цистерны - авария
       effectjobs:
         - unit: oil_factory
@@ -825,6 +854,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 264
+      is_attempt: false
       riskname: Подмена данных о состоянии резервуаров с нефтепродуктами в системе управления на нефтебазе - авария
       effectjobs:
         - unit: oil_factory
@@ -844,6 +874,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 265
+      is_attempt: false
       riskname: Ложное срабатывание системы подслойного пожаротушения в резервуаре с бензином - авария
       effectjobs:
         - unit: oil_factory
@@ -863,6 +894,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 266
+      is_attempt: false
       riskname: Разлив нефти из-за переполнения резервуара с нефтепродуктами по причине взлома системы противоаварийной защиты - авария
       effectjobs:
         - unit: oil_factory
@@ -882,6 +914,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 315
+      is_attempt: false
       riskname: Утечка персональных данных сотрудников НПЗ - авария
       effectjobs:
         - unit: refinery
@@ -901,6 +934,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 267
+      is_attempt: false
       riskname: Утечка конфиденциальной информации о месторождениях газа - авария
       effectjobs:
         - unit: refinery
@@ -920,6 +954,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 304
+      is_attempt: false
       riskname: Утечка данных контрагентов НПЗ - авария
       effectjobs:
         - unit: refinery
@@ -939,6 +974,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 268
+      is_attempt: false
       riskname: Распространение вируса-шифровальщика НПЗ - авария
       effectjobs:
         - unit: refinery
@@ -958,6 +994,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 269
+      is_attempt: false
       riskname: Ложное оповещение о чрезвычайной ситуации - авария
       effectjobs:
         - unit: refinery
@@ -977,6 +1014,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 270
+      is_attempt: false
       riskname: Вывод из строя коммутатора на нефтеперекачивающей станции - авария
       effectjobs:
         - unit: oil_platform
@@ -1026,6 +1064,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 374
+      is_attempt: false
       riskname: Вывод денег со счетов банка через АРМ КБР - авария
       effectjobs:
         - unit: commercial_bank
@@ -1099,6 +1138,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 375
+      is_attempt: false
       riskname: Вывод денег с клиентских счетов через систему ДБО - авария
       effectjobs:
         - unit: commercial_bank
@@ -1148,6 +1188,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 363
+      is_attempt: false
       riskname: Утечка информации, составляющей банковскую тайну - авария
       effectjobs:
         - unit: commercial_bank
@@ -1197,6 +1238,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 376
+      is_attempt: false
       riskname: Вывод денег с клиентских счетов через терминал кассира-операциониста - авария
       effectjobs:
         - unit: commercial_bank
@@ -1258,6 +1300,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 365
+      is_attempt: false
       riskname: Кража персональных данных клиентов банка - авария
       effectjobs:
         - unit: commercial_bank
@@ -1319,6 +1362,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 366
+      is_attempt: false
       riskname: Вывод денег со счетов банка через АБС - авария
       effectjobs:
         - unit: commercial_bank
@@ -1374,6 +1418,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 364
+      is_attempt: false
       riskname: Распространение вируса-шифровальщика банк - авария
       effectjobs:
         - unit: commercial_bank
@@ -1429,6 +1474,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 368
+      is_attempt: false
       riskname: Утечка учетных записей для доступа к приложениям First Partner Bank - авария
       effectjobs:
         - unit: commercial_bank
@@ -1478,6 +1524,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 367
+      is_attempt: false
       riskname: Взлом мерчант-портала. Формирование произвольных QR-кодов - авария
       effectjobs:
         - unit: commercial_bank
@@ -1509,6 +1556,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 370
+      is_attempt: false
       riskname: Взлом основного сервера баз данных - авария
       effectjobs:
         - unit: commercial_bank
@@ -1552,6 +1600,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 369
+      is_attempt: false
       riskname: Получение доступа к управлению сервером платежей - авария
       effectjobs:
         - unit: commercial_bank
@@ -1607,6 +1656,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 371
+      is_attempt: false
       riskname: Оплата товаров по QR-кодам за счет украденных средств - авария
       effectjobs:
         - unit: commercial_bank
@@ -1662,6 +1712,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 372
+      is_attempt: false
       riskname: Оплата товаров с чужих счетов по QR-кодам - авария
       effectjobs:
         - unit: commercial_bank
@@ -1711,6 +1762,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 373
+      is_attempt: false
       riskname: Утечка базы данных мерчант-портала - авария
       effectjobs:
         - unit: commercial_bank
@@ -1742,6 +1794,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 355
+      is_attempt: false
       riskname: Утечка информации о банковских операциях - авария
       effectjobs:
         - unit: commercial_bank
@@ -1791,6 +1844,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 356
+      is_attempt: false
       riskname: Получение доступа к административной панели Kubernetes - авария
       effectjobs:
         - unit: commercial_bank
@@ -1840,6 +1894,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 357
+      is_attempt: false
       riskname: Утечка данных клиентов Global Digital Bank - авария
       effectjobs:
         - unit: commercial_bank
@@ -1877,6 +1932,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 358
+      is_attempt: false
       riskname: Выполнение вредоносного кода внутри контейнера с банковским сервисом - авария
       effectjobs:
         - unit: commercial_bank
@@ -1926,6 +1982,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 359
+      is_attempt: false
       riskname: Ошибка работы платежного процессинга - авария
       effectjobs:
         - unit: commercial_bank
@@ -1969,6 +2026,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 360
+      is_attempt: false
       riskname: Взлом новостного портала Global Digital Bank - авария
       effectjobs:
         - unit: commercial_bank
@@ -1994,6 +2052,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 361
+      is_attempt: false
       riskname: Обход 2FA при оплате товаров через QR - авария
       effectjobs:
         - unit: stock_exchange
@@ -2019,6 +2078,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 362
+      is_attempt: false
       riskname: Перевыпуск пользовательских ключей PayControl - авария
       effectjobs:
         - unit: commercial_bank
@@ -2074,6 +2134,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 336
+      is_attempt: false
       riskname: Отключение линий электропередачи на любой подстанции (отключение линии, питающей металлургический комбинат) - авария
       effectjobs:
         - unit: substation
@@ -2147,485 +2208,486 @@ events:
           start: 0
           finish: 40000
     - riskid: 337
+      is_attempt: false
       riskname: Отключение всех электрических подстанций - авария
       effectjobs:
         - unit: ges
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: electrical_wires
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: turbine
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: steam
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: factory_steam
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: wind_turbines
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: wires_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: transformator
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: substation
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: substation
           effect: towers_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: substation
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: bank_windows
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: sphere
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: light_bridge_APM
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: screen_central_bank
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: vault_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: people
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: lightbox
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: hacker_label
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: facade_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: interior_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: apart_hacker_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: hacker_smart_window
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: park_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: kinetic_doors
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: backlight
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: lanterns
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: hacker
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: station_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: screen_center_fly
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: station
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: car_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: work_screens
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stadion
           effect: scene_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stadion
           effect: people_splash
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: appart_iot
           effect: appart_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: darkstore
           effect: transport_belts
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: darkstore
           effect: inside_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: darkstore
           effect: left_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: main_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: tv_presentation
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: people
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: tv_main
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: circle_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: mini_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: traffic_light_cars
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: cars
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: cars_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: people
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: cranes
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: light_tf_refinery
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: turbine_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_factory
           effect: tanks
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_factory
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_factory
           effect: light_tf_ags
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: refinery
           effect: tanker
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: refinery
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: refinery
           effect: light_tube
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: azs
           effect: platform
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: azs
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: aviatransport
           effect: plane
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: aviatransport
           effect: funicular_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: roads
           effect: scooter
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: roads
           effect: cars
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: roads
           effect: trafic_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: railroad
           effect: train_cargo
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cargo_port
           effect: steam
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cargo_port
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: river_port
           effect: platform
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
@@ -2640,6 +2702,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 338
+      is_attempt: false
       riskname: Подмена информации о передаче электроэнергии - авария
       effectjobs:
         - unit: substation
@@ -2677,6 +2740,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 339
+      is_attempt: false
       riskname: Остановка ветрогенераторов - авария
       effectjobs:
         - unit: ves
@@ -2732,6 +2796,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 340
+      is_attempt: false
       riskname: Подмена данных о работе ветрогенераторов - авария
       effectjobs:
         - unit: ves
@@ -2793,6 +2858,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 341
+      is_attempt: false
       riskname: Остановка работы паровой турбины на ТЭЦ - авария
       effectjobs:
         - unit: tes
@@ -2842,6 +2908,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 343
+      is_attempt: false
       riskname: Отключение потребителей от электросети путем взлома электросчетчиков - авария
       effectjobs:
         - unit: substation
@@ -2891,6 +2958,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 344
+      is_attempt: false
       riskname: Остановка работы гидроагрегата на гидроэлектростанции - авария
       effectjobs:
         - unit: ges
@@ -2940,6 +3008,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 345
+      is_attempt: false
       riskname: Подмена данных на экране оператора гидроэлектростанции - авария
       effectjobs:
         - unit: ges
@@ -2977,6 +3046,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 346
+      is_attempt: false
       riskname: Утечка персональных данных клиентов Энерго - авария
       effectjobs:
         - unit: ges
@@ -3020,6 +3090,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 347
+      is_attempt: false
       riskname: Утечка данных контрагентов Энерго - авария
       effectjobs:
         - unit: ges
@@ -3063,6 +3134,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 348
+      is_attempt: false
       riskname: Распространение вируса-шифровальщика Энерго - авария
       effectjobs:
         - unit: ges
@@ -3100,6 +3172,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 349
+      is_attempt: false
       riskname: Вывод из строя коммутатора технологической сети ГЭС - авария
       effectjobs:
         - unit: ges
@@ -3137,485 +3210,486 @@ events:
           start: 0
           finish: 40000
     - riskid: 351
+      is_attempt: false
       riskname: Отключение всех электрических подстанций из центра диспетчерского управления - авария
       effectjobs:
         - unit: ges
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: electrical_wires
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ges
           effect: turbine
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: steam
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: tes
           effect: factory_steam
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: wind_turbines
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: wires_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: ves
           effect: transformator
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: substation
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: substation
           effect: towers_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: substation
           effect: city_part_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: bank_windows
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: sphere
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: light_bridge_APM
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: screen_central_bank
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: commercial_bank
           effect: vault_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: people
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: lightbox
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stock_exchange
           effect: hacker_label
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: facade_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: interior_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: apart_hacker_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: hacker_smart_window
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: crypto_exchange
           effect: park_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: kinetic_doors
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: backlight
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: lanterns
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: atm
           effect: hacker
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: station_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: screen_center_fly
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: station
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: car_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: work_screens
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cosmolift
           effect: screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stadion
           effect: scene_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: stadion
           effect: people_splash
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: appart_iot
           effect: appart_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: darkstore
           effect: transport_belts
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: darkstore
           effect: inside_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: darkstore
           effect: left_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: main_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: tv_presentation
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: people
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: office_mfc
           effect: tv_main
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: circle_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: mini_screen
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: traffic_light_cars
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: cars
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: cars_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: urban_system
           effect: people
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: cranes
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: light_tf_refinery
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_platform
           effect: turbine_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_factory
           effect: tanks
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_factory
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: oil_factory
           effect: light_tf_ags
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: refinery
           effect: tanker
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: refinery
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: refinery
           effect: light_tube
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: azs
           effect: platform
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: azs
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: aviatransport
           effect: plane
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: aviatransport
           effect: funicular_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: roads
           effect: scooter
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: roads
           effect: cars
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: roads
           effect: trafic_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: railroad
           effect: train_cargo
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cargo_port
           effect: steam
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: cargo_port
           effect: arc_light
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
         - unit: river_port
           effect: platform
-          modeon: off
+          modeon: "off"
           modeoff: normal
           start: 0
           finish: 40000
@@ -3660,6 +3734,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 352
+      is_attempt: false
       riskname: Подмена данных в системе телемеханики в центре диспетчерского управления - авария
       effectjobs:
         - unit: substation
@@ -3727,6 +3802,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 353
+      is_attempt: false
       riskname: Утечка новой технологии для генерации электроэнергии - авария
       effectjobs:
         - unit: ges
@@ -3764,6 +3840,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 350
+      is_attempt: false
       riskname: Отключение электроэнергии у потребителей солнечной станции - авария
       effectjobs:
         - unit: ves
@@ -3783,6 +3860,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 354
+      is_attempt: false
       riskname: Подмена данных о работе инвертора на солнечной электростанции - авария
       effectjobs:
         - unit: ves
@@ -3808,6 +3886,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 394
+      is_attempt: false
       riskname: Показ нежелательного контента на рекламных видеоэкранах - авария
       effectjobs:
         - unit: urban_system
@@ -3833,6 +3912,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 399
+      is_attempt: false
       riskname: Сбой системы кондиционирования в МФЦ - авария
       effectjobs:
         - unit: office_mfc
@@ -3858,6 +3938,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 400
+      is_attempt: false
       riskname: Утечка конфиденциальной информации МФЦ - авария
       effectjobs:
         - unit: office_mfc
@@ -3889,6 +3970,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 401
+      is_attempt: false
       riskname: Внедрение вредоносного кода в исходный код приложения МФЦ - авария
       effectjobs:
         - unit: office_mfc
@@ -3920,6 +4002,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 402
+      is_attempt: false
       riskname: Распространение вируса-шифровальщика МФЦ - авария
       effectjobs:
         - unit: office_mfc
@@ -3951,6 +4034,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 403
+      is_attempt: false
       riskname: Утечка медицинских данных МФЦ - авария
       effectjobs:
         - unit: office_mfc
@@ -3982,6 +4066,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 404
+      is_attempt: false
       riskname: Утечка конфиденциальной информации из образовательного учреждения - авария
       effectjobs:
         - unit: office_mfc
@@ -4013,6 +4098,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 407
+      is_attempt: false
       riskname: Вывод из строя коммутатора системы вентиляции и кондиционирования - авария
       effectjobs:
         - unit: office_mfc
@@ -4038,6 +4124,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 405
+      is_attempt: false
       riskname: Нелегальное подключение к зум-сессии\RocketChat в презентационном зале МФЦ - авария
       effectjobs:
         - unit: office_mfc
@@ -4069,6 +4156,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 406
+      is_attempt: false
       riskname: Нарушение работоспособности онлайн аптеки - авария
       effectjobs:
         - unit: darkstore
@@ -4100,6 +4188,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 389
+      is_attempt: false
       riskname: Обход модерации аптечных товаров - авария
       effectjobs:
         - unit: office_mfc
@@ -4119,6 +4208,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 390
+      is_attempt: false
       riskname: IoT Отключение датчика - авария
       effectjobs:
         - unit: appart_iot
@@ -4138,6 +4228,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 391
+      is_attempt: false
       riskname: IoT Подмена учетной записи (перехват управления) - авария
       effectjobs:
         - unit: appart_iot
@@ -4157,6 +4248,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 393
+      is_attempt: false
       riskname: Получение доступа к инстансу другого клиента (хостинг-провайдер) - авария
       effectjobs:
         - unit: urban_system
@@ -4167,7 +4259,7 @@ events:
           finish: 40000
     - riskid: 397
       is_attempt: true
-      riskname: "Хостинг-провайдер: Повышение количества токенов на счету - тревога"
+      riskname: 'Хостинг-провайдер: Повышение количества токенов на счету - тревога'
       effectjobs:
         - unit: urban_system
           effect: circle_screen
@@ -4176,7 +4268,8 @@ events:
           start: 0
           finish: 40000
     - riskid: 397
-      riskname: "Хостинг-провайдер: Повышение количества токенов на счету - авария"
+      is_attempt: false
+      riskname: 'Хостинг-провайдер: Повышение количества токенов на счету - авария'
       effectjobs:
         - unit: urban_system
           effect: circle_screen
@@ -4201,6 +4294,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 398
+      is_attempt: false
       riskname: Утечка исходного кода флагманского приложения компании - авария
       effectjobs:
         - unit: urban_system
@@ -4238,6 +4332,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 377
+      is_attempt: false
       riskname: Сбой системы передачи данных (сбой трекинга тарелки) - авария
       effectjobs:
         - unit: cosmolift
@@ -4269,6 +4364,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 378
+      is_attempt: false
       riskname: Сбой системы передачи данных (сбой трекинга тарелки) - авария
       effectjobs:
         - unit: cosmolift
@@ -4300,6 +4396,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 379
+      is_attempt: false
       riskname: Вики - утечка данных (Похищение чертежей космолифта) - авария
       effectjobs:
         - unit: cosmolift
@@ -4343,6 +4440,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 380
+      is_attempt: false
       riskname: Нарушение работы ИС с документацией для передачи заготовки из цеха в цех - авария
       effectjobs:
         - unit: cosmolift
@@ -4386,6 +4484,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 381
+      is_attempt: false
       riskname: Произвольное исполненние кода на web-сервере ЦУП - авария
       effectjobs:
         - unit: cosmolift
@@ -4417,6 +4516,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 382
+      is_attempt: false
       riskname: Получение прав суперпользователя на наземной приемной станции - авария
       effectjobs:
         - unit: cosmolift
@@ -4436,6 +4536,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 383
+      is_attempt: false
       riskname: Произвольное исполнение кода на спутнике - авария
       effectjobs:
         - unit: cosmolift
@@ -4455,6 +4556,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 384
+      is_attempt: false
       riskname: РУВДС Получение информации о работе протокола - авария
       effectjobs:
         - unit: cosmolift
@@ -4474,6 +4576,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 385
+      is_attempt: false
       riskname: РУВДС Отправка сигнала на спутник - авария
       effectjobs:
         - unit: cosmolift
@@ -4493,6 +4596,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 414
+      is_attempt: false
       riskname: Утечка финансовых документов нефть
       effectjobs:
         - unit: refinery
@@ -4524,6 +4628,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 416
+      is_attempt: false
       riskname: Утечка финансовых документов банк
       effectjobs:
         - unit: stock_exchange
@@ -4555,6 +4660,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 415
+      is_attempt: false
       riskname: Утечка финансовых документов энергетика
       effectjobs:
         - unit: substation
@@ -4574,6 +4680,7 @@ events:
           start: 0
           finish: 40000
     - riskid: 417
+      is_attempt: false
       riskname: Утечка финансовых документов космос
       effectjobs:
         - unit: cosmolift
@@ -4582,3 +4689,163 @@ events:
           modeoff: normal
           start: 0
           finish: 40000
+    - riskid: 330
+      is_attempt: false
+      riskname: '[] Утечка информации о перевозках'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 395
+      is_attempt: false
+      riskname: '[]Отключение уличного освещения'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 321
+      is_attempt: false
+      riskname: '[] Вывод из строя коммутаторов технологической сети телетрапа'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 388
+      is_attempt: false
+      riskname: '[] Внедрение вредоносного кода в процесс разработки ПО (сложный уровень)'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 332
+      is_attempt: false
+      riskname: '[] Сбой в системе регистрации пассажиров'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 387
+      is_attempt: false
+      riskname: '[] Внедрение вредоносного кода в процесс разработки ПО (средний уровень)'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 342
+      is_attempt: false
+      riskname: '[] Подмена показаний счетчиков электроэнергии'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 386
+      is_attempt: false
+      riskname: '[] Внедрение вредоносного кода в процесс разработки ПО (простой уровень)'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 392
+      is_attempt: false
+      riskname: '![] Добавление машины в белый список для бесплатного въезда (шлагбаумы)'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 329
+      is_attempt: false
+      riskname: '[] Распространение вируса-шифровальщика'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 323
+      is_attempt: false
+      riskname: '[] Подмена данных о состоянии телетрапа'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 334
+      is_attempt: false
+      riskname: '[] Вывод из строя коммутатора системы выдачи багажа'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 328
+      is_attempt: false
+      riskname: '[] Утечка персональных данных сотрудников'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 322
+      is_attempt: false
+      riskname: '[] Вмешательство в управление телетрапом'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 324
+      is_attempt: false
+      riskname: '[] Сбой системы выдачи багажа'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
+    - riskid: 396
+      is_attempt: false
+      riskname: '![]Перехват изображения с городских камер видеонаблюдения'
+      effectjobs:
+        - unit: ""
+          effect: ""
+          modeon: ""
+          modeoff: ""
+          start: 0
+          finish: 0
