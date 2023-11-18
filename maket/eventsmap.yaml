@@ -4482,3 +4482,103 @@ events:
           modeoff: normal
           start: 0
           finish: 40000
+    - riskid: 414
+      is_attempt: true
+      riskname: Утечка финансовых документов нефть
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 414
+      riskname: Утечка финансовых документов нефть
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 416
+      is_attempt: true
+      riskname: Утечка финансовых документов банк
+      effectjobs:
+        - unit: stock_exchange
+          effect: lightbox
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 416
+      riskname: Утечка финансовых документов банк
+      effectjobs:
+        - unit: stock_exchange
+          effect: lightbox
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 416
+      is_attempt: true
+      riskname: Утечка финансовых документов энергетика
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 415
+      riskname: Утечка финансовых документов энергетика
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 417
+      is_attempt: true
+      riskname: Утечка финансовых документов космос
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 417
+      riskname: Утечка финансовых документов космос
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
