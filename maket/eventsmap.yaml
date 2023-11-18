@@ -1,0 +1,4484 @@
+events:
+    - riskid: 325
+      is_attempt: true
+      riskname: Остановка работы мостового крана - тревога
+      effectjobs:
+        - unit: cargo_port
+          effect: steam
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 325
+      riskname: Остановка работы мостового крана - авария
+      effectjobs:
+        - unit: cargo_port
+          effect: steam
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 326
+      is_attempt: true
+      riskname: Вмешательство в управление портальным краном - тревога
+      effectjobs:
+        - unit: cargo_port
+          effect: steam
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 326
+      riskname: Вмешательство в управление портальным краном - авария
+      effectjobs:
+        - unit: cargo_port
+          effect: steam
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 316
+      is_attempt: true
+      riskname: Остановка работы городских светофоров - тревога
+      effectjobs:
+        - unit: roads
+          effect: scooter
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: cars
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: trafic_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 316
+      riskname: Остановка работы городских светофоров - авария
+      effectjobs:
+        - unit: roads
+          effect: scooter
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: cars
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: trafic_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 317
+      is_attempt: true
+      riskname: Нарушение работы городских светофоров - тревога
+      effectjobs:
+        - unit: roads
+          effect: scooter
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: cars
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: trafic_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 317
+      riskname: Нарушение работы городских светофоров - авария
+      effectjobs:
+        - unit: roads
+          effect: scooter
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: cars
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: trafic_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 318
+      is_attempt: true
+      riskname: Прекращение движения поездов - тревога
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 318
+      riskname: Прекращение движения поездов - авария
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 319
+      is_attempt: true
+      riskname: Авария на железной дороге - тревога
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 319
+      riskname: Авария на железной дороге - авария
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 320
+      is_attempt: true
+      riskname: Подмена данных на пульте диспетчера железной дороги - тревога
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 320
+      riskname: Подмена данных на пульте диспетчера железной дороги - авария
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 327
+      is_attempt: true
+      riskname: Сбой системы информирования пассажиров поездов - тревога
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 327
+      riskname: Сбой системы информирования пассажиров поездов - авария
+      effectjobs:
+        - unit: railroad
+          effect: train_cargo
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 331
+      is_attempt: true
+      riskname: "Канатная дорога: Остановка канатной дороги - тревога"
+      effectjobs:
+        - unit: aviatransport
+          effect: funicular_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 331
+      riskname: "Канатная дорога: Остановка канатной дороги - авария"
+      effectjobs:
+        - unit: aviatransport
+          effect: funicular_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 333
+      is_attempt: true
+      riskname: "Канатная дорога: Изменение скорости движения - тревога"
+      effectjobs:
+        - unit: aviatransport
+          effect: funicular_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 333
+      riskname: "Канатная дорога: Изменение скорости движения - авария"
+      effectjobs:
+        - unit: aviatransport
+          effect: funicular_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 335
+      is_attempt: true
+      riskname: "ГосУслуги: Выпуск сертификата на перевозку опасных грузов - тревога"
+      effectjobs:
+        - unit: aviatransport
+          effect: plane
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 335
+      riskname: "ГосУслуги: Выпуск сертификата на перевозку опасных грузов - авария"
+      effectjobs:
+        - unit: aviatransport
+          effect: plane
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 313
+      is_attempt: true
+      riskname: Остановка добычи нефти - тревога
+      effectjobs:
+        - unit: oil_platform
+          effect: cranes
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 313
+      riskname: Остановка добычи нефти - авария
+      effectjobs:
+        - unit: oil_platform
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 312
+      is_attempt: true
+      riskname: Подмена данных о состоянии нефтекачалок - тревога
+      effectjobs:
+        - unit: oil_platform
+          effect: cranes
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 312
+      riskname: Подмена данных о состоянии нефтекачалок - авария
+      effectjobs:
+        - unit: oil_platform
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 248
+      is_attempt: true
+      riskname: Остановка нефтеперекачивающей станции - тревога
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 248
+      riskname: Остановка нефтеперекачивающей станции - авария
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 249
+      is_attempt: true
+      riskname: Утечка нефти из нефтепровода - тревога
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 249
+      riskname: Утечка нефти из нефтепровода - авария
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 250
+      is_attempt: true
+      riskname: Подмена данных в системе управления нефтеперекачивающей станцией - тревога
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 250
+      riskname: Подмена данных в системе управления нефтеперекачивающей станцией - авария
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 251
+      is_attempt: true
+      riskname: Вывод из строя коммутаторов технологической сети очистки нефти - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: tanks
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 251
+      riskname: Вывод из строя коммутаторов технологической сети очистки нефти - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: tanks
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 252
+      is_attempt: true
+      riskname: Остановка очистки нефти в электродегидраторе на нефтеперерабатывающем заводе - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: tanks
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 252
+      riskname: Остановка очистки нефти в электродегидраторе на нефтеперерабатывающем заводе - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: tanks
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 253
+      is_attempt: true
+      riskname: Нарушение процесса обессоливания и обезвоживания нефти в электродегидраторе на нефтеперерабатывающем заводе - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 253
+      riskname: Нарушение процесса обессоливания и обезвоживания нефти в электродегидраторе на нефтеперерабатывающем заводе - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 254
+      is_attempt: true
+      riskname: Подмена значений пропорций водонефтяной смеси в электродегитраторе - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 254
+      riskname: Подмена значений пропорций водонефтяной смеси в электродегитраторе - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 255
+      is_attempt: true
+      riskname: Остановка подачи топливного газа в трубчатую печь нефтеперерабатывающего завода - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 255
+      riskname: Остановка подачи топливного газа в трубчатую печь нефтеперерабатывающего завода - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 256
+      is_attempt: true
+      riskname: Пожар на нефтеперерабатывающем заводе из-за нарушения технологического процесса подогрева нефти в печи - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 256
+      riskname: Пожар на нефтеперерабатывающем заводе из-за нарушения технологического процесса подогрева нефти в печи - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 257
+      is_attempt: true
+      riskname: Захлебывание ректификационной колонны на нефтеперерабатывающем заводе - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 257
+      riskname: Захлебывание ректификационной колонны на нефтеперерабатывающем заводе - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 258
+      is_attempt: true
+      riskname: Остановка работы ректификационной колонны на нефтеперерабатывающем заводе - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 258
+      riskname: Остановка работы ректификационной колонны на нефтеперерабатывающем заводе - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 259
+      is_attempt: true
+      riskname: Невозможность заправки автомобилей на ААЗС из-за включения режима приема топлива - тревога
+      effectjobs:
+        - unit: azs
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 259
+      riskname: Невозможность заправки автомобилей на ААЗС из-за включения режима приема топлива - авария
+      effectjobs:
+        - unit: azs
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 260
+      is_attempt: true
+      riskname: Остановка нефтепродуктопровода - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 260
+      riskname: Остановка нефтепродуктопровода - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 261
+      is_attempt: true
+      riskname: Изменение цены продаваемого топлива в системе управления АЗС - тревога
+      effectjobs:
+        - unit: azs
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 261
+      riskname: Изменение цены продаваемого топлива в системе управления АЗС - авария
+      effectjobs:
+        - unit: azs
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 262
+      is_attempt: true
+      riskname: Разлив нефти на автоматизированной установке тактового налива нефти в ж.-д. цистерны - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 262
+      riskname: Разлив нефти на автоматизированной установке тактового налива нефти в ж.-д. цистерны - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 263
+      is_attempt: true
+      riskname: Повреждение автоматизированной установки тактового налива нефти в ж.-д. цистерны - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 263
+      riskname: Повреждение автоматизированной установки тактового налива нефти в ж.-д. цистерны - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 264
+      is_attempt: true
+      riskname: Подмена данных о состоянии резервуаров с нефтепродуктами в системе управления на нефтебазе - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 264
+      riskname: Подмена данных о состоянии резервуаров с нефтепродуктами в системе управления на нефтебазе - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 265
+      is_attempt: true
+      riskname: Ложное срабатывание системы подслойного пожаротушения в резервуаре с бензином - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 265
+      riskname: Ложное срабатывание системы подслойного пожаротушения в резервуаре с бензином - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 266
+      is_attempt: true
+      riskname: Разлив нефти из-за переполнения резервуара с нефтепродуктами по причине взлома системы противоаварийной защиты - тревога
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 266
+      riskname: Разлив нефти из-за переполнения резервуара с нефтепродуктами по причине взлома системы противоаварийной защиты - авария
+      effectjobs:
+        - unit: oil_factory
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 315
+      is_attempt: true
+      riskname: Утечка персональных данных сотрудников НПЗ - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 315
+      riskname: Утечка персональных данных сотрудников НПЗ - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 267
+      is_attempt: true
+      riskname: Утечка конфиденциальной информации о месторождениях газа - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 267
+      riskname: Утечка конфиденциальной информации о месторождениях газа - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 304
+      is_attempt: true
+      riskname: Утечка данных контрагентов НПЗ - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 304
+      riskname: Утечка данных контрагентов НПЗ - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 268
+      is_attempt: true
+      riskname: Распространение вируса-шифровальщика НПЗ - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 268
+      riskname: Распространение вируса-шифровальщика НПЗ - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 269
+      is_attempt: true
+      riskname: Ложное оповещение о чрезвычайной ситуации - тревога
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 269
+      riskname: Ложное оповещение о чрезвычайной ситуации - авария
+      effectjobs:
+        - unit: refinery
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 270
+      is_attempt: true
+      riskname: Вывод из строя коммутатора на нефтеперекачивающей станции - тревога
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 270
+      riskname: Вывод из строя коммутатора на нефтеперекачивающей станции - авария
+      effectjobs:
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 374
+      is_attempt: true
+      riskname: Вывод денег со счетов банка через АРМ КБР - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: light_bridge_APM
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 374
+      riskname: Вывод денег со счетов банка через АРМ КБР - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: light_bridge_APM
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 375
+      is_attempt: true
+      riskname: Вывод денег с клиентских счетов через систему ДБО - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 375
+      riskname: Вывод денег с клиентских счетов через систему ДБО - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 363
+      is_attempt: true
+      riskname: Утечка информации, составляющей банковскую тайну - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 363
+      riskname: Утечка информации, составляющей банковскую тайну - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 376
+      is_attempt: true
+      riskname: Вывод денег с клиентских счетов через терминал кассира-операциониста - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 376
+      riskname: Вывод денег с клиентских счетов через терминал кассира-операциониста - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 365
+      is_attempt: true
+      riskname: Кража персональных данных клиентов банка - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 365
+      riskname: Кража персональных данных клиентов банка - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 366
+      is_attempt: true
+      riskname: Вывод денег со счетов банка через АБС - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 366
+      riskname: Вывод денег со счетов банка через АБС - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 364
+      is_attempt: true
+      riskname: Распространение вируса-шифровальщика банк - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 364
+      riskname: Распространение вируса-шифровальщика банк - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 368
+      is_attempt: true
+      riskname: Утечка учетных записей для доступа к приложениям First Partner Bank - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 368
+      riskname: Утечка учетных записей для доступа к приложениям First Partner Bank - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 367
+      is_attempt: true
+      riskname: Взлом мерчант-портала. Формирование произвольных QR-кодов - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 367
+      riskname: Взлом мерчант-портала. Формирование произвольных QR-кодов - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 370
+      is_attempt: true
+      riskname: Взлом основного сервера баз данных - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 370
+      riskname: Взлом основного сервера баз данных - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 369
+      is_attempt: true
+      riskname: Получение доступа к управлению сервером платежей - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: backlight
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: hacker
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 369
+      riskname: Получение доступа к управлению сервером платежей - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: backlight
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: hacker
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 371
+      is_attempt: true
+      riskname: Оплата товаров по QR-кодам за счет украденных средств - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 371
+      riskname: Оплата товаров по QR-кодам за счет украденных средств - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 372
+      is_attempt: true
+      riskname: Оплата товаров с чужих счетов по QR-кодам - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 372
+      riskname: Оплата товаров с чужих счетов по QR-кодам - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 373
+      is_attempt: true
+      riskname: Утечка базы данных мерчант-портала - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 373
+      riskname: Утечка базы данных мерчант-портала - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 355
+      is_attempt: true
+      riskname: Утечка информации о банковских операциях - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 355
+      riskname: Утечка информации о банковских операциях - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 356
+      is_attempt: true
+      riskname: Получение доступа к административной панели Kubernetes - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 356
+      riskname: Получение доступа к административной панели Kubernetes - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 357
+      is_attempt: true
+      riskname: Утечка данных клиентов Global Digital Bank - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 357
+      riskname: Утечка данных клиентов Global Digital Bank - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 358
+      is_attempt: true
+      riskname: Выполнение вредоносного кода внутри контейнера с банковским сервисом - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 358
+      riskname: Выполнение вредоносного кода внутри контейнера с банковским сервисом - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 359
+      is_attempt: true
+      riskname: Ошибка работы платежного процессинга - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 359
+      riskname: Ошибка работы платежного процессинга - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 360
+      is_attempt: true
+      riskname: Взлом новостного портала Global Digital Bank - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 360
+      riskname: Взлом новостного портала Global Digital Bank - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 361
+      is_attempt: true
+      riskname: Обход 2FA при оплате товаров через QR - тревога
+      effectjobs:
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 361
+      riskname: Обход 2FA при оплате товаров через QR - авария
+      effectjobs:
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 362
+      is_attempt: true
+      riskname: Перевыпуск пользовательских ключей PayControl - тревога
+      effectjobs:
+        - unit: commercial_bank
+          effect: sphere
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 362
+      riskname: Перевыпуск пользовательских ключей PayControl - авария
+      effectjobs:
+        - unit: commercial_bank
+          effect: sphere
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 336
+      is_attempt: true
+      riskname: Отключение линий электропередачи на любой подстанции (отключение линии, питающей металлургический комбинат) - тревога
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: towers_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: steam
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: factory_steam
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 336
+      riskname: Отключение линий электропередачи на любой подстанции (отключение линии, питающей металлургический комбинат) - авария
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: towers_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: steam
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: factory_steam
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 337
+      is_attempt: true
+      riskname: Отключение всех электрических подстанций - тревога
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: towers_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 337
+      riskname: Отключение всех электрических подстанций - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: electrical_wires
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: turbine
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: steam
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: factory_steam
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wind_turbines
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: towers_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: light_bridge_APM
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: screen_central_bank
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: people
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: lightbox
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: facade_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: interior_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: apart_hacker_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: hacker_smart_window
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: park_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: kinetic_doors
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: backlight
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: hacker
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: station_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen_center_fly
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: station
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: car_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stadion
+          effect: scene_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stadion
+          effect: people_splash
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: appart_iot
+          effect: appart_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: transport_belts
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: inside_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: left_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: main_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: tv_presentation
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: tv_main
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: circle_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: mini_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: traffic_light_cars
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: cars
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: cars_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: people
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: cranes
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: turbine_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: tanks
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: light_tf_ags
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: tanker
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: aviatransport
+          effect: plane
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: aviatransport
+          effect: funicular_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: scooter
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: cars
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: trafic_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: railroad
+          effect: train_cargo
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: steam
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: river_port
+          effect: platform
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 338
+      is_attempt: true
+      riskname: Подмена информации о передаче электроэнергии - тревога
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 338
+      riskname: Подмена информации о передаче электроэнергии - авария
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 339
+      is_attempt: true
+      riskname: Остановка ветрогенераторов - тревога
+      effectjobs:
+        - unit: ves
+          effect: wind_turbines
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 339
+      riskname: Остановка ветрогенераторов - авария
+      effectjobs:
+        - unit: ves
+          effect: wind_turbines
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 340
+      is_attempt: true
+      riskname: Подмена данных о работе ветрогенераторов - тревога
+      effectjobs:
+        - unit: ves
+          effect: wind_turbines
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 340
+      riskname: Подмена данных о работе ветрогенераторов - авария
+      effectjobs:
+        - unit: ves
+          effect: wind_turbines
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 341
+      is_attempt: true
+      riskname: Остановка работы паровой турбины на ТЭЦ - тревога
+      effectjobs:
+        - unit: tes
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: steam
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: factory_steam
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 341
+      riskname: Остановка работы паровой турбины на ТЭЦ - авария
+      effectjobs:
+        - unit: tes
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: steam
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: factory_steam
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 343
+      is_attempt: true
+      riskname: Отключение потребителей от электросети путем взлома электросчетчиков - тревога
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 343
+      riskname: Отключение потребителей от электросети путем взлома электросчетчиков - авария
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 344
+      is_attempt: true
+      riskname: Остановка работы гидроагрегата на гидроэлектростанции - тревога
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: electrical_wires
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: turbine
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 344
+      riskname: Остановка работы гидроагрегата на гидроэлектростанции - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: electrical_wires
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: turbine
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 345
+      is_attempt: true
+      riskname: Подмена данных на экране оператора гидроэлектростанции - тревога
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 345
+      riskname: Подмена данных на экране оператора гидроэлектростанции - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 346
+      is_attempt: true
+      riskname: Утечка персональных данных клиентов Энерго - тревога
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 346
+      riskname: Утечка персональных данных клиентов Энерго - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 347
+      is_attempt: true
+      riskname: Утечка данных контрагентов Энерго - тревога
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 347
+      riskname: Утечка данных контрагентов Энерго - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 348
+      is_attempt: true
+      riskname: Распространение вируса-шифровальщика Энерго - тревога
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 348
+      riskname: Распространение вируса-шифровальщика Энерго - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 349
+      is_attempt: true
+      riskname: Вывод из строя коммутатора технологической сети ГЭС - тревога
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 349
+      riskname: Вывод из строя коммутатора технологической сети ГЭС - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 351
+      is_attempt: true
+      riskname: Отключение всех электрических подстанций из центра диспетчерского управления - тревога
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 351
+      riskname: Отключение всех электрических подстанций из центра диспетчерского управления - авария
+      effectjobs:
+        - unit: ges
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: electrical_wires
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: turbine
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: steam
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: factory_steam
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wind_turbines
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: towers_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: city_part_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: bank_windows
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: sphere
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: light_bridge_APM
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: screen_central_bank
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: commercial_bank
+          effect: vault_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: people
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: lightbox
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stock_exchange
+          effect: hacker_label
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: facade_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: interior_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: apart_hacker_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: hacker_smart_window
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: crypto_exchange
+          effect: park_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: kinetic_doors
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: backlight
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: lanterns
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: atm
+          effect: hacker
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: station_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen_center_fly
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: station
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: car_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stadion
+          effect: scene_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: stadion
+          effect: people_splash
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: appart_iot
+          effect: appart_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: transport_belts
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: inside_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: left_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: main_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: tv_presentation
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: tv_main
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: circle_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: mini_screen
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: traffic_light_cars
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: cars
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: cars_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: people
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: cranes
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: light_tf_refinery
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_platform
+          effect: turbine_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: tanks
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: oil_factory
+          effect: light_tf_ags
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: tanker
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: refinery
+          effect: light_tube
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: platform
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: azs
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: aviatransport
+          effect: plane
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: aviatransport
+          effect: funicular_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: scooter
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: cars
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: roads
+          effect: trafic_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: railroad
+          effect: train_cargo
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: steam
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cargo_port
+          effect: arc_light
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: river_port
+          effect: platform
+          modeon: off
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 352
+      is_attempt: true
+      riskname: Подмена данных в системе телемеханики в центре диспетчерского управления - тревога
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 352
+      riskname: Подмена данных в системе телемеханики в центре диспетчерского управления - авария
+      effectjobs:
+        - unit: substation
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: wires_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ges
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 353
+      is_attempt: true
+      riskname: Утечка новой технологии для генерации электроэнергии - тревога
+      effectjobs:
+        - unit: ges
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: arc_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 353
+      riskname: Утечка новой технологии для генерации электроэнергии - авария
+      effectjobs:
+        - unit: ges
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: tes
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: ves
+          effect: transformator
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: substation
+          effect: arc_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 350
+      is_attempt: true
+      riskname: Отключение электроэнергии у потребителей солнечной станции - тревога
+      effectjobs:
+        - unit: ves
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 350
+      riskname: Отключение электроэнергии у потребителей солнечной станции - авария
+      effectjobs:
+        - unit: ves
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 354
+      is_attempt: true
+      riskname: Подмена данных о работе инвертора на солнечной электростанции - тревога
+      effectjobs:
+        - unit: ves
+          effect: city_part_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 354
+      riskname: Подмена данных о работе инвертора на солнечной электростанции - авария
+      effectjobs:
+        - unit: ves
+          effect: city_part_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 394
+      is_attempt: true
+      riskname: Показ нежелательного контента на рекламных видеоэкранах - тревога
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: mini_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 394
+      riskname: Показ нежелательного контента на рекламных видеоэкранах - авария
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: mini_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 399
+      is_attempt: true
+      riskname: Сбой системы кондиционирования в МФЦ - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 399
+      riskname: Сбой системы кондиционирования в МФЦ - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 400
+      is_attempt: true
+      riskname: Утечка конфиденциальной информации МФЦ - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 400
+      riskname: Утечка конфиденциальной информации МФЦ - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 401
+      is_attempt: true
+      riskname: Внедрение вредоносного кода в исходный код приложения МФЦ - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 401
+      riskname: Внедрение вредоносного кода в исходный код приложения МФЦ - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 402
+      is_attempt: true
+      riskname: Распространение вируса-шифровальщика МФЦ - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 402
+      riskname: Распространение вируса-шифровальщика МФЦ - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 403
+      is_attempt: true
+      riskname: Утечка медицинских данных МФЦ - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 403
+      riskname: Утечка медицинских данных МФЦ - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 404
+      is_attempt: true
+      riskname: Утечка конфиденциальной информации из образовательного учреждения - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 404
+      riskname: Утечка конфиденциальной информации из образовательного учреждения - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 407
+      is_attempt: true
+      riskname: Вывод из строя коммутатора системы вентиляции и кондиционирования - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 407
+      riskname: Вывод из строя коммутатора системы вентиляции и кондиционирования - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: main_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: office_mfc
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 405
+      is_attempt: true
+      riskname: Нелегальное подключение к зум-сессии\RocketChat в презентационном зале МФЦ - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: tv_presentation
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 405
+      riskname: Нелегальное подключение к зум-сессии\RocketChat в презентационном зале МФЦ - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: tv_presentation
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 406
+      is_attempt: true
+      riskname: Нарушение работоспособности онлайн аптеки - тревога
+      effectjobs:
+        - unit: darkstore
+          effect: transport_belts
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: inside_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: left_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 406
+      riskname: Нарушение работоспособности онлайн аптеки - авария
+      effectjobs:
+        - unit: darkstore
+          effect: transport_belts
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: inside_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: darkstore
+          effect: left_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 389
+      is_attempt: true
+      riskname: Обход модерации аптечных товаров - тревога
+      effectjobs:
+        - unit: office_mfc
+          effect: people
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 389
+      riskname: Обход модерации аптечных товаров - авария
+      effectjobs:
+        - unit: office_mfc
+          effect: people
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 390
+      is_attempt: true
+      riskname: IoT Отключение датчика - тревога
+      effectjobs:
+        - unit: appart_iot
+          effect: appart_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 390
+      riskname: IoT Отключение датчика - авария
+      effectjobs:
+        - unit: appart_iot
+          effect: appart_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 391
+      is_attempt: true
+      riskname: IoT Подмена учетной записи (перехват управления) - тревога
+      effectjobs:
+        - unit: appart_iot
+          effect: appart_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 391
+      riskname: IoT Подмена учетной записи (перехват управления) - авария
+      effectjobs:
+        - unit: appart_iot
+          effect: appart_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 393
+      is_attempt: true
+      riskname: Получение доступа к инстансу другого клиента (хостинг-провайдер) - тревога
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 393
+      riskname: Получение доступа к инстансу другого клиента (хостинг-провайдер) - авария
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 397
+      is_attempt: true
+      riskname: "Хостинг-провайдер: Повышение количества токенов на счету - тревога"
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 397
+      riskname: "Хостинг-провайдер: Повышение количества токенов на счету - авария"
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 398
+      is_attempt: true
+      riskname: Утечка исходного кода флагманского приложения компании - тревога
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: mini_screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 398
+      riskname: Утечка исходного кода флагманского приложения компании - авария
+      effectjobs:
+        - unit: urban_system
+          effect: circle_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: urban_system
+          effect: mini_screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 377
+      is_attempt: true
+      riskname: Сбой системы передачи данных (сбой трекинга тарелки) - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 377
+      riskname: Сбой системы передачи данных (сбой трекинга тарелки) - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 378
+      is_attempt: true
+      riskname: Сбой системы передачи данных (сбой трекинга тарелки) - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 378
+      riskname: Сбой системы передачи данных (сбой трекинга тарелки) - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 379
+      is_attempt: true
+      riskname: Вики - утечка данных (Похищение чертежей космолифта) - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: station
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: car_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 379
+      riskname: Вики - утечка данных (Похищение чертежей космолифта) - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: station
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: car_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 380
+      is_attempt: true
+      riskname: Нарушение работы ИС с документацией для передачи заготовки из цеха в цех - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 380
+      riskname: Нарушение работы ИС с документацией для передачи заготовки из цеха в цех - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 381
+      is_attempt: true
+      riskname: Произвольное исполненние кода на web-сервере ЦУП - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 381
+      riskname: Произвольное исполненние кода на web-сервере ЦУП - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: work_screens
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+        - unit: cosmolift
+          effect: screen
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 382
+      is_attempt: true
+      riskname: Получение прав суперпользователя на наземной приемной станции - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 382
+      riskname: Получение прав суперпользователя на наземной приемной станции - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 383
+      is_attempt: true
+      riskname: Произвольное исполнение кода на спутнике - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 383
+      riskname: Произвольное исполнение кода на спутнике - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 384
+      is_attempt: true
+      riskname: РУВДС Получение информации о работе протокола - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 384
+      riskname: РУВДС Получение информации о работе протокола - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 385
+      is_attempt: true
+      riskname: РУВДС Отправка сигнала на спутник - тревога
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: warning
+          modeoff: normal
+          start: 0
+          finish: 40000
+    - riskid: 385
+      riskname: РУВДС Отправка сигнала на спутник - авария
+      effectjobs:
+        - unit: cosmolift
+          effect: station_light
+          modeon: invalid
+          modeoff: normal
+          start: 0
+          finish: 40000
