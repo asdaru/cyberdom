@@ -158,7 +158,7 @@ events:
         - unit: railroad
           effect: train_cargo
           modeon: warning
-          modeoff: normal
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 318
@@ -167,8 +167,8 @@ events:
       effectjobs:
         - unit: railroad
           effect: train_cargo
-          modeon: "off"
-          modeoff: normal
+          modeon: "normal"
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 319
@@ -178,7 +178,7 @@ events:
         - unit: railroad
           effect: train_cargo
           modeon: warning
-          modeoff: normal
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 319
@@ -188,7 +188,7 @@ events:
         - unit: railroad
           effect: train_cargo
           modeon: invalid
-          modeoff: normal
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 320
@@ -198,7 +198,7 @@ events:
         - unit: railroad
           effect: train_cargo
           modeon: warning
-          modeoff: normal
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 320
@@ -208,7 +208,7 @@ events:
         - unit: railroad
           effect: train_cargo
           modeon: invalid
-          modeoff: normal
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 327
@@ -218,7 +218,7 @@ events:
         - unit: railroad
           effect: train_cargo
           modeon: warning
-          modeoff: normal
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 327
@@ -228,7 +228,7 @@ events:
         - unit: railroad
           effect: train_cargo
           modeon: invalid
-          modeoff: normal
+          modeoff: "off"
           start: 0
           finish: 40000
     - riskid: 331
@@ -2669,8 +2669,8 @@ events:
           finish: 40000
         - unit: railroad
           effect: train_cargo
-          modeon: "off"
-          modeoff: normal
+          modeon: "normal"
+          modeoff: "off"
           start: 0
           finish: 40000
         - unit: cargo_port
@@ -4691,7 +4691,7 @@ events:
           finish: 40000
     - riskid: 330
       is_attempt: false
-      riskname: '[] Утечка информации о перевозках'
+      riskname: 'Утечка информации о перевозках'
       effectjobs:
         - unit: ""
           effect: ""
@@ -4700,18 +4700,40 @@ events:
           start: 0
           finish: 0
     - riskid: 395
-      is_attempt: false
-      riskname: '[]Отключение уличного освещения'
+      is_attempt: true
+      riskname: 'Отключение уличного освещения'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "urban_system"
+          effect: "traffic_light_cars"
+          modeon: "off"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 3000
+        - unit: "urban_system"
+          effect: "traffic_light_cars"
+          modeon: "off"
+          modeoff: "normal"
+          start: 6000
+          finish: 9000
+        - unit: "urban_system"
+          effect: "traffic_light_cars"
+          modeon: "off"
+          modeoff: "normal"
+          start: 30000
+          finish: 40000
+    - riskid: 395
+      is_attempt: false
+      riskname: 'Отключение уличного освещения'
+      effectjobs:
+        - unit: "urban_system"
+          effect: "traffic_light_cars"
+          modeon: "off"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
     - riskid: 321
       is_attempt: false
-      riskname: '[] Вывод из строя коммутаторов технологической сети телетрапа'
+      riskname: 'Вывод из строя коммутаторов технологической сети телетрапа'
       effectjobs:
         - unit: ""
           effect: ""
@@ -4721,7 +4743,7 @@ events:
           finish: 0
     - riskid: 388
       is_attempt: false
-      riskname: '[] Внедрение вредоносного кода в процесс разработки ПО (сложный уровень)'
+      riskname: 'Внедрение вредоносного кода в процесс разработки ПО (сложный уровень)'
       effectjobs:
         - unit: ""
           effect: ""
@@ -4731,7 +4753,7 @@ events:
           finish: 0
     - riskid: 332
       is_attempt: false
-      riskname: '[] Сбой в системе регистрации пассажиров'
+      riskname: 'Сбой в системе регистрации пассажиров'
       effectjobs:
         - unit: ""
           effect: ""
@@ -4741,37 +4763,91 @@ events:
           finish: 0
     - riskid: 387
       is_attempt: false
-      riskname: '[] Внедрение вредоносного кода в процесс разработки ПО (средний уровень)'
+      riskname: 'Внедрение вредоносного кода в процесс разработки ПО (средний уровень)'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "stadion"
+          effect: "scene_screen"
+          modeon: "invalid"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 40000
+    - riskid: 387
+      is_attempt: true
+      riskname: 'Внедрение вредоносного кода в процесс разработки ПО (средний уровень)'
+      effectjobs:
+        - unit: "stadion"
+          effect: "scene_screen"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
     - riskid: 342
       is_attempt: false
-      riskname: '[] Подмена показаний счетчиков электроэнергии'
+      riskname: 'Подмена показаний счетчиков электроэнергии'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "tes"
+          effect: "factory_steam"
+          modeon: "invalid"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 40000
+        - unit: "substation"
+          effect: "city_part_light"
+          modeon: "invalid"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
+        - unit: "ves"
+          effect: "transformator"
+          modeon: "invalid"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
+    - riskid: 342
+      is_attempt: true
+      riskname: 'Подмена показаний счетчиков электроэнергии'
+      effectjobs:
+        - unit: "tes"
+          effect: "factory_steam"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
+        - unit: "substation"
+          effect: "city_part_light"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
+        - unit: "ves"
+          effect: "transformator"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
     - riskid: 386
       is_attempt: false
-      riskname: '[] Внедрение вредоносного кода в процесс разработки ПО (простой уровень)'
+      riskname: 'Внедрение вредоносного кода в процесс разработки ПО (простой уровень)'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "stadion"
+          effect: "scene_screen"
+          modeon: "invalid"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 40000
+    - riskid: 386
+      is_attempt: true
+      riskname: 'Внедрение вредоносного кода в процесс разработки ПО (простой уровень)'
+      effectjobs:
+        - unit: "stadion"
+          effect: "scene_screen"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
     - riskid: 392
       is_attempt: false
-      riskname: '![] Добавление машины в белый список для бесплатного въезда (шлагбаумы)'
+      riskname: '!Добавление машины в белый список для бесплатного въезда (шлагбаумы)'
       effectjobs:
         - unit: ""
           effect: ""
@@ -4781,71 +4857,133 @@ events:
           finish: 0
     - riskid: 329
       is_attempt: false
-      riskname: '[] Распространение вируса-шифровальщика'
+      riskname: 'Распространение вируса-шифровальщика'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "urban_system"
+          effect: "circle_screen"
+          modeon: "invalid"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 40000
+        - unit: "urban_system"
+          effect: "mini_screen"
+          modeon: "invalid"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
+    - riskid: 329
+      is_attempt: true
+      riskname: 'Распространение вируса-шифровальщика'
+      effectjobs:
+        - unit: "urban_system"
+          effect: "circle_screen"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
+        - unit: "urban_system"
+          effect: "mini_screen"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
     - riskid: 323
       is_attempt: false
-      riskname: '[] Подмена данных о состоянии телетрапа'
+      riskname: 'Подмена данных о состоянии телетрапа'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "off"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 20000
+    - riskid: 323
+      is_attempt: true
+      riskname: 'Подмена данных о состоянии телетрапа'
+      effectjobs:
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "off"
+          modeoff: "normal"
+          start: 0
+          finish: 3000
     - riskid: 334
       is_attempt: false
-      riskname: '[] Вывод из строя коммутатора системы выдачи багажа'
+      riskname: 'Вывод из строя коммутатора системы выдачи багажа'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "off"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 20000
+    - riskid: 334
+      is_attempt: true
+      riskname: 'Вывод из строя коммутатора системы выдачи багажа'
+      effectjobs:
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "off"
+          modeoff: "normal"
+          start: 0
+          finish: 5000
     - riskid: 328
       is_attempt: false
-      riskname: '[] Утечка персональных данных сотрудников'
+      riskname: 'Утечка персональных данных сотрудников'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "invalid"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 20000
+    - riskid: 328
+      is_attempt: true
+      riskname: 'Утечка персональных данных сотрудников'
+      effectjobs:
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 20000
     - riskid: 322
       is_attempt: false
-      riskname: '[] Вмешательство в управление телетрапом'
+      riskname: 'Вмешательство в управление телетрапом'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "warning"
+          modeoff: "normal"
           start: 0
-          finish: 0
-    - riskid: 324
-      is_attempt: false
-      riskname: '[] Сбой системы выдачи багажа'
+          finish: 20000
+    - riskid: 322
+      is_attempt: true
+      riskname: 'Вмешательство в управление телетрапом'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "aviatransport"
+          effect: "plane"
+          modeon: "warning"
+          modeoff: "off"
           start: 0
-          finish: 0
+          finish: 5000
     - riskid: 396
       is_attempt: false
-      riskname: '![]Перехват изображения с городских камер видеонаблюдения'
+      riskname: 'Перехват изображения с городских камер видеонаблюдения'
       effectjobs:
-        - unit: ""
-          effect: ""
-          modeon: ""
-          modeoff: ""
+        - unit: "urban_system"
+          effect: "mini_screen"
+          modeon: "off"
+          modeoff: "normal"
           start: 0
-          finish: 0
+          finish: 40000
+    - riskid: 396
+      is_attempt: true
+      riskname: 'Перехват изображения с городских камер видеонаблюдения'
+      effectjobs:
+        - unit: "urban_system"
+          effect: "mini_screen"
+          modeon: "warning"
+          modeoff: "normal"
+          start: 0
+          finish: 40000
